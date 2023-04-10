@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      background-color: #f7feff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container form {
+      padding: 25px 15px 40px;
+      width: 60%;
+      max-width: 600px;
+      background-color: #fff;
+      box-shadow: 0 15px 40px -10px #0000002a;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .mail {
+      width: 50px;
+      color: #fff;
+    }
+    form h2 {
+      font-size: 30px;
+      margin: 15px 0;
+    }
+    form input {
+      outline: none;
+      border: 0.5px solid rgba(128, 128, 128, 0.548);
+      margin: 13px 0;
+      padding: 15px;
+      font-size: 15px;
+    }
+    form input:focus {
+      outline: 1px solid skyblue;
+    }
+    form label {
+      margin-top: -10px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+    form label input {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    form button {
+      background-color: #243338;
+      color: #fff;
+      padding: 20px 0;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .container form {
+        width: 90%;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="" method="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#2d2d2d"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#fff"
+          class="mail"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+          />
+        </svg>
+        <h2>Our Newsletter</h2>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          autocomplete="off"
+          required
+        />
+        <label for="subscribe">
+          <input type="checkbox" name="subscribe" id="subscribe" /><span
+            >Daily Updates</span
+          >
+        </label>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </body>
+</html>
